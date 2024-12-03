@@ -27,7 +27,7 @@ def save_to_excel(google_reviews: List[Dict[str, str]], filename: str = "reviews
     Raises:
         ValueError: If the 'reviewId' field is not present in the downloaded data.
     """
-    output_dir = os.path.abspath("../out")
+    output_dir = os.path.abspath("./out")
     os.makedirs(output_dir, exist_ok=True)
 
     # Full path of the file
